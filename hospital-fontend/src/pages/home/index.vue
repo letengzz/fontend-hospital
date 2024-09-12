@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div style="display:flex;flex-direction:column">
     <!-- 首页轮播图的结构 -->
     <Carousel/>
     <!-- 首页搜索医院的表单区域 -->
     <Search/>
     <!-- 展示医院的结构-->
-    <el-row :gutter="20">
+    <el-row :gutter="20" style="display: flex">
       <el-col :span="16">
         <div>医院</div>
         <!-- 等级子组件 -->
@@ -14,7 +14,7 @@
         <Region/>
         <!-- 展示医院的结构 -->
         <div class="hospital" >
-         <Card v-for="o in 4" key="o" class="item"/>
+         <Card v-for="o in 5" key="o" class="item"/>
         </div>
         <!-- 分页器 -->
         <div class="page">
@@ -78,6 +78,8 @@ let hasHospitalArr = reactive([]);
   display: flex;
   align-content: center;
   justify-content: center;
+  align-self: flex-end;
+  margin: 10px 0px;
 }
 .hospital{
   display: flex;
