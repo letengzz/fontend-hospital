@@ -528,6 +528,10 @@ import Search from "@/components/search/index.vue";
 
 ## Axios封装
 
+```
+npm i axios
+```
+
 
 
 ## 代理跨域

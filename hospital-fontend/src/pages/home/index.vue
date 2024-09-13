@@ -7,7 +7,6 @@
     <!-- 展示医院的结构-->
     <el-row :gutter="20" style="display: flex">
       <el-col :span="16">
-        <div>医院</div>
         <!-- 等级子组件 -->
         <Level/>
         <!-- 地区子组件 -->
